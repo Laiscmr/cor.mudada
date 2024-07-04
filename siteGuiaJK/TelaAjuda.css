@@ -1,0 +1,52 @@
+.help-widget {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(124, 74, 198);
+    color: #000000;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000; /* Garante que esteja acima de outros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .help-widget:hover {
+    background-color: rgb(100, 57, 163);
+  }
+  
+  .help-icon img {
+    width: 57px;
+    height: 57px;
+    margin-top: 2.5px;
+    margin-right: 0.1px;
+  }
+  
+  .help-content {
+    position: absolute;
+    top: 0;
+    right: 60px; /* Posição da aba de conteúdo de ajuda */
+    width: 250px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: none; /* Esconde o conteúdo de ajuda */
+    z-index: 999; /* Garante que esteja abaixo do ícone de ajuda */
+    margin-top: -240px;
+    border-radius: 25px;
+  }
+  
+  .help-content.active {
+    display: block; /* Mostra o conteúdo de ajuda quando ativado */
+  }
+  
+  h3 {
+    color:rgb(128, 45, 253);
+  }
+
+  
